@@ -191,6 +191,6 @@ namespace osu.Game.Configuration
         IntroSequence,
         UIHoldActivationDelay,
         HitLighting,
-        MenuBackgroundSource
+        MenuBackgroundSource,
     }
 }

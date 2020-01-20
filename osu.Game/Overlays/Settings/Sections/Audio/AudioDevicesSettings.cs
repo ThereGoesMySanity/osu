@@ -63,7 +63,9 @@ namespace osu.Game.Overlays.Settings.Sections.Audio
                 dropdown = new AudioDeviceSettingsDropdown
                 {
                     Keywords = new[] { "speaker", "headphone", "output" }
-                }
+                },
+                new SettingsSlider<int> { LabelText = "Period Size", Bindable = audio.UpdatePeriod, KeyboardStep = 1},
+                new SettingsSlider<int> { LabelText = "Buffer Length", Bindable = audio.BufferLength, KeyboardStep = 1}
             };
 
             updateItems();
